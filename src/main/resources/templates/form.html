@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Soy Nuevo</h1>
+<form th:action="@{/save}" method="post" th:object="${categoria}">
+	<input type="text" th:field="*{nombre}" required="required"><br>
+	<input type="submit" value="Enviar">
+
+</form>
+</body>
+</html>
